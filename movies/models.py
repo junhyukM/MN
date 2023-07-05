@@ -9,7 +9,8 @@ class Actor(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=20)
-    actors = models.ManyToManyField(Actor)
+    #related_name => 위에 입력한 반대쪽에서 참조하는 명칭을 바꿔줌 movie_set =>'movies'
+    actors = models.ManyToManyField(Actor, related_name='movies')
 
 
 
