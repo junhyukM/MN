@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 
     'movies',
+    'hospital',
 ]
 
 MIDDLEWARE = [
